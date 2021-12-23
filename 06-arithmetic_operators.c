@@ -20,7 +20,7 @@ int main() {
 	printf("x / y = %f\n", x / (float) y);
 	printf("x %% y = %d\n", x % y);
 	
-	// unary operators
+	// unary operators (operates on single operand)
 	// ++ (increment)
 	// -- (decrement)
 	
