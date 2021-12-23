@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<string.h> // include this header file to use string functions
 
+// Some string functions
+
 int main() {
     char string1[] = "Faze";
     char string2[] = "faze";
