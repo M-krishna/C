@@ -34,7 +34,7 @@ int main() {
     printf("Player 1 name is %s and age is %d\n", player1.name, player1.age);
     printf("Player 2 name is %s and age is %d\n", player2.name, player2.age);
 
-    // another way of declaration
+    // another way of initialization and declaration
     struct Player player3 = {"krish", 20};
     printf("Player 3 name is %s and age is %d\n", player3.name, player3.age);
 
