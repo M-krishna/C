@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 int main() {
     // array = a data structure that can store many values of same data type.
@@ -45,5 +46,21 @@ int main() {
         printf("\n");
     }
 
+    // array of strings
+    // a string in C is an array of characters
+    // so we need a 2D array to represent array of strings
+    char cars[][11] = {"Mustang", "Range Rover", "BMW"};
+    printf("Size of cars array %lu\n", sizeof(cars));
+    printf("\n");
+    for(int i = 0; i < sizeof(cars)/sizeof(cars[0]); i++) {
+        printf("%s\n", cars[i]);
+    }
 
+    // change the value of an index in an array
+    // cars[0] = "Audi"; // this is not possible
+    strcpy(cars[0], "Audi");
+    printf("\n");
+    for(int i = 0; i < sizeof(cars)/sizeof(cars[0]); i++) {
+        printf("%s\n", cars[i]);
+    }
 }
