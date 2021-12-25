@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void printAge(int *age);
+void printAge(int *pAge); // function prototype
 
 int main() {
     // pointer = a variable like reference that holds the memory address to
