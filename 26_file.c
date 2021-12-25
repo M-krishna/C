@@ -8,7 +8,7 @@ void deleteFile();
 
 
 int main() {
-    // FILE is a datatype
+    // 'FILE' is a datatype
     readFirstLineFromFile();
     // readFromFile();
     // writeToFile();
