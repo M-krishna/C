@@ -77,6 +77,11 @@ int main() {
   printf("6 >> 2 = %d\n", i >> 2);
 
   // 1's complement operator
+  /*
+	1 to 0
+	0 to 1
+	5 -> 00000101 -> 11111010
+  */
   int j = 5;
   z = ~j;
   printf("1s complement of 5 = %d\n", z);
