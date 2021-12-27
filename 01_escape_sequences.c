@@ -9,4 +9,6 @@ int main() {
 	printf("\"This is a quote\" - someone\n");
 	// include single quote inside print statement
 	printf("\'This is a quote\'\n");
+	// carriage return - moves the active position to the initial position of the current line
+	printf("Hello \r friends");
 }

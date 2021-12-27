@@ -23,4 +23,12 @@ int main() {
 }
 ```
 
+### The void datatype
+| S.No | Types & Description |
+| ---- | ------------------- |
+| 1 | Functions returns as void. Eg. void print() |
+| 2 | Functions arguments as void. Eg. int rand(void) |
+
+
+
 used clang compiler
