@@ -1,6 +1,6 @@
 # C
 
-### Integer types
+### Some basic integer types
 | Type | Storage size | Value range |
 | ---- | ------------ | ----------- |
 | char | 1 byte | -128 to 127 |
