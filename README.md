@@ -12,4 +12,15 @@
 | float | 4 bytes | |
 | double | 8 bytes | |
 
+### Get the exact size of a type or a variable
+We can use `sizeof` operator. Eg.
+```c
+#include <stdio.h>
+
+int main() {
+    int a;
+    prinf("%lu bytes\n", sizeof(a)); // should print 4 bytes
+}
+```
+
 used clang compiler
