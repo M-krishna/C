@@ -29,6 +29,14 @@ int main() {
 | 1 | Functions returns as void. Eg. void print() |
 | 2 | Functions arguments as void. Eg. int rand(void) |
 
+### Variable Declaration & Initialization example
+```c
+int i, j, k; // declares 3 variables of i, j and k
+int i = 10; // declares variable of type int and initialize a value of 10
 
+char c;
+float f;
+double d;
+```
 
 used clang compiler
