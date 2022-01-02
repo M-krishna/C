@@ -38,5 +38,3 @@ char c;
 float f;
 double d;
 ```
-
-used clang compiler
