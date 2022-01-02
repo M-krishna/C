@@ -11,6 +11,9 @@ int main() {
 void auto_storage_class() {
 	int month;
 	auto int count;
+	
+	printf("default value of int month: %ld\n", sizeof(month));
+	printf("default value of auto int count: %ld\n", sizeof(count));
 
 	month = 0;
 	count = 1;
