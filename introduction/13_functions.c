@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+void call_by_value(); // function prototype
+void call_by_reference();
+
 // example of a normal function that doesn't accept any arguments
 // or return anything(hence the void)
 void birthday() {
@@ -27,4 +30,34 @@ int main() {
 
     double x = square(4);
     printf("\n%lf\n", x);
+
+    int i = 10;
+    int j = 20;
+    // call by value
+    call_by_value(i, j); // swap x and y values
+    printf("\nValue of i after calling call_by_value(): %d\n", i);
+    printf("Value of j after calling call_by_value(): %d\n", j);
+    // end call by value
+
+    // call by reference
+    call_by_reference(&i, &j);
+    printf("\nValue of i after calling call_by_reference(): %d\n", i);
+    printf("Value of j after calling call_by_reference(): %d\n", j);
+    // end call by reference
+}
+
+// swap example
+void call_by_value(int x, int y) {
+    int temp;
+    temp = x;
+    x = y;
+    y = temp;
+}
+
+// swap example
+void call_by_reference(int *x, int *y) {
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
 }
