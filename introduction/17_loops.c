@@ -21,7 +21,7 @@ int main() {
         Side note,
         int i = 1,
         x = i++, x = 1, i = 2
-        y = ++1, y = 3, i = 3
+        y = ++i, y = 3, i = 3
     */
 
    // while loop
@@ -79,4 +79,10 @@ int main() {
        printf("\n");
    }
    // end of nested loop
+
+   // infinite loop
+   for(;;) {
+       printf("This is an infinite for loop\n");
+   }
+   // end infinite for loop
 }
