@@ -6,10 +6,12 @@
 
 void pointer_arithmetic_increment();
 void pointer_arithmetic_decrement();
+void pointer_comparison();
 
 int main() {
     pointer_arithmetic_increment();
     pointer_arithmetic_decrement();
+    pointer_comparison();
 }
 
 void pointer_arithmetic_increment() {
@@ -46,5 +48,21 @@ void pointer_arithmetic_decrement() {
         printf("Address of arr[%d] is %p\n", i, ptr);
         printf("Value of arr[%d] is %d\n", i, *ptr);
         ptr--; // decrement the address
+    }
+}
+
+void pointer_comparison() {
+    printf("\nPointer comparison\n");
+    int i = 10;
+    int *ptr1;
+    int *ptr2;
+
+    ptr1 = &i; // ptr1 points to the address of i
+    ptr2 = &i; // ptr2 points to the address of i
+
+    if(ptr1 == ptr2) { // comparison operator
+        printf("ptr1 and ptr2 are equal\n");
+    } else {
+        printf("ptr1 and ptr2 are not equal\n");
     }
 }
