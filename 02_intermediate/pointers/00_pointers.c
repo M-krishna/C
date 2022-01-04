@@ -4,7 +4,16 @@
 // 4 arithmetic operators(+, -, ++, --)
 // only on array
 
+void pointer_arithmetic_increment();
+void pointer_arithmetic_decrement();
+
 int main() {
+    pointer_arithmetic_increment();
+    pointer_arithmetic_decrement();
+}
+
+void pointer_arithmetic_increment() {
+    printf("Pointer arithmetic increment\n");
     int arr[] = {1,2,3};
     int *ptr; // declares pointer to a interger
     ptr = arr; // stores the address of arr[0]
@@ -23,5 +32,19 @@ int main() {
             then it will point to the next character location which is
             1 byte next to the current location.
         */
+    }
+}
+
+void pointer_arithmetic_decrement() {
+    printf("\nPointer arithmetic decrement\n");
+    int arr[] = {1,2,3};
+    int *ptr;
+    ptr = &arr[sizeof(arr)/sizeof(arr[0]) - 1]; // the reason for using '&' here is because we are accessing the last element in the array.
+    // by default if we use arr directly it will get the address of the first element
+
+    for(int i = sizeof(arr)/sizeof(arr[0]) - 1; i >= 0; i--) {
+        printf("Address of arr[%d] is %p\n", i, ptr);
+        printf("Value of arr[%d] is %d\n", i, *ptr);
+        ptr--; // decrement the address
     }
 }
