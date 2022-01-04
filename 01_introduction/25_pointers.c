@@ -3,6 +3,7 @@
 void printAge(int *pAge); // function prototype
 void another_example();
 void null_pointer_example();
+void conditional_check_pointers();
 
 int main() {
     // pointer = a variable like reference that holds the memory address to
@@ -38,6 +39,7 @@ int main() {
 
     another_example();
     null_pointer_example();
+    conditional_check_pointers();
 }
 
 void printAge(int *pAge) {
@@ -66,4 +68,15 @@ void null_pointer_example() {
 
     int *ptr = NULL; // pointer to interger with NULL value
     printf("The value of ptr: %p\n", ptr); // prints 0x0, which means 0 in hex
+}
+
+void conditional_check_pointers() {
+    int i = 10;
+    int *ptr = &i; // change this to NULL to make it NULL pointer
+
+    if(ptr) {
+        printf("\nThis pointer is not null %d, %p\n", *ptr, ptr);
+    } else {
+        printf("\nThis is a NULL pointer\n");
+    }
 }
