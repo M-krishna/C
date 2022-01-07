@@ -87,3 +87,29 @@ int main() {
     }
 }
 ```
+
+Array of pointers
+```c
+#include<stdio.h>
+const int MAX = 3;
+int main() {
+    int arr[MAX] = {1,2,3};
+    int *ptr[MAX];
+    for(int i = 0; i < MAX; i++) {
+        ptr[i] = &arr[i] // assign the address of each array elements to ptr[i]
+    }
+    // we can use *ptr[i] to print the values
+}
+```
+
+### Pointer to pointer
+Used to store pointer of a variable to another pointer
+```c
+#include<stdio.h>
+
+int main() {
+    int i = 10;
+    int *ptr = &i; // stores the address of i to ptr
+    int **ptr1 = &ptr; // stores the address of ptr to ptr1
+}
+```
