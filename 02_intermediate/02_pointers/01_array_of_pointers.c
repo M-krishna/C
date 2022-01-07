@@ -67,6 +67,7 @@ void pointer_to_an_array() {
     // both will have the same address
     printf("\nAddress of the 0th element in b: %p\n", &b[0]);
     printf("Address of the pointer variable a: %p\n", a);
+    printf("value of *a: %p\n", *a);
     printf("Value of a: %d\n", *(*a));
 
     printf("Array elements\n");
